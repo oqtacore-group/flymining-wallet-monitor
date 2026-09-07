@@ -61,7 +61,7 @@ namespace BitcoinInfoMiner
             badCheckTimeout = parent.badCheckTimeout;
             badCheckFirstStart = parent.badCheckFirstStart;
             userName = parent.minerLogin;
-            password = parent.minerPass;
+            password = REDACTED;
             flyMiningPassword = Log.flyMiningPassword;
             flyMiningUserName = Log.flyMiningUserName;
             detectHighTemp = parent.detectHighTemp;
@@ -230,9 +230,9 @@ namespace BitcoinInfoMiner
             monitoringTimeout = 30000; 
             badCheckTimeout = 1800000;
             badCheckFirstStart = 10000;
-            password = "root";
+            password = "REDACTED";
             userName = "root";
-            flyMiningPassword = "";
+            flyMiningPassword = "REDACTED";
             flyMiningUserName = "";
             detectHighTemp = true;
             //Log.emailForBadStatus = new string[] { "support@flysecure.ru" };
@@ -246,7 +246,7 @@ namespace BitcoinInfoMiner
 
         private void textBoxPass_TextChanged(object sender, EventArgs e)
         {
-            password = textBoxPass.Text;
+            password = REDACTED;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

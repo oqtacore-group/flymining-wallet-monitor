@@ -617,10 +617,7 @@ namespace BitcoinInfoMiner
             writeSettings[iter++] = "pool1Worker=" + pool1.worker;
             writeSettings[iter++] = "pool2Worker=" + pool2.worker;
             writeSettings[iter++] = "pool3Worker=" + pool3.worker;
-            writeSettings[iter++] = "pool1Pwd=" + pool1.psw;
-            writeSettings[iter++] = "pool2Pwd=" + pool2.psw;
-            writeSettings[iter++] = "pool3Pwd=" + pool3.psw;
-            writeSettings[iter++] = "pool1PostfixIp=" + pool1.postfixIp.ToString();
+            writeSettings[iter++] = "pool1Pwd="REDACTED"pool2Pwd="REDACTED"pool3Pwd="REDACTED"pool1PostfixIp=" + pool1.postfixIp.ToString();
             writeSettings[iter++] = "pool2PostfixIp=" + pool2.postfixIp.ToString();
             writeSettings[iter++] = "pool3PostfixIp=" + pool3.postfixIp.ToString();
             writeSettings[iter++] = "pool1PostfixNoChange=" + pool1.postfixNoChange.ToString();
@@ -750,7 +747,7 @@ namespace BitcoinInfoMiner
             //[feature]
             iter++;
             writeSettings[iter++] = "[feature]";
-            writeSettings[iter++] = "openMinerCPWithPassword=" + "";
+            writeSettings[iter++] = "openMinerCPWithPassword="REDACTED"";
             writeSettings[iter++] = "apiCheckTimeout=" + apiCheckTimeout.ToString();
             writeSettings[iter++] = "apiCheckStart=" + apiCheckStart.ToString();
             writeSettings[iter++] = "apiCheckState=" + apiCheckState.ToString();
@@ -957,7 +954,7 @@ namespace BitcoinInfoMiner
             //    System.Net.ServicePointManager.Expect100Continue = false;
             //    var url = "http://" + host +":"+Convert.ToString(port);
             //    HttpClientHandler handler = new HttpClientHandler();
-            //    //handler.Credentials = new System.Net.NetworkCredential("root", "root");
+            //    //handler.Credentials = new System.Net.NetworkCredential("REDACTED", "REDACTED");
             //    HttpClient client = new HttpClient();//handler);
             //    client.Timeout = new TimeSpan(0, 0,10);
             //    //client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Authorization", "Digest username=\"root\", realm=\"antMiner Configuration\",uri=\"/cgi-bin/set_network_conf.cgi\"");

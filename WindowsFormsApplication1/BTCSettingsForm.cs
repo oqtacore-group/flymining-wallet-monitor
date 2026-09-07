@@ -122,7 +122,7 @@ namespace BitcoinInfoMiner
                 }
             }
         }
-        public void addRowToGrid(string wallet,string site,string secretKey="")
+        public void addRowToGrid(string wallet,string site,string secretKey="REDACTED")
         {
             if (site != "Bittrex" && site != "NiceHash")
             {

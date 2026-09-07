@@ -21,7 +21,7 @@ namespace BitcoinInfoMiner
         public static readonly string logArchivePath = Directory.GetCurrentDirectory() + "\\logReport\\Archive\\";
         public static Dictionary<string, string> ipSituation=new Dictionary<string,string>();
         public static string flyMiningUserName="";
-        public static string flyMiningPassword="";
+        public static string flyMiningPassword="REDACTED";
 
         public static  string[] emailForBadStatus;//Эмейлы на который будут отправлятся отчеты
         public static void logDebug(string msg)
@@ -161,7 +161,7 @@ namespace BitcoinInfoMiner
                     //client.Port = 587;
                     ////client.EnableSsl = (useSSL == "yes" ? true : false);
                     //client.UseDefaultCredentials = false;
-                    //client.Credentials = new NetworkCredential("info@flystat.ru", "4B630wks5/3w");
+                    //client.Credentials = new NetworkCredential("REDACTED", "REDACTED");
                     //client.DeliveryMethod = SmtpDeliveryMethod.Network;
                     //client.Send(mail);
                     //mail.Dispose();
